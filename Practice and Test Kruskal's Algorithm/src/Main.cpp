@@ -17,7 +17,7 @@ Edge * Kruskal(Edge * edges)
 {
 	int * treesTMP = new int[255];
 	int index = 0;
-	int * beggining = treesTMP;
+	int * beginning = treesTMP;
 	while (edges != nullptr)
 	{
 		if (!ArrayContains(treesTMP, edges->first))
@@ -33,7 +33,8 @@ Edge * Kruskal(Edge * edges)
 		edges++;
 	}
 	int * trees = new int[index];
-	memccpy(trees, treesTMP,);
+	
+	memcpy(trees, treesTMP, index * sizeof(int));
 	while (edges != nullptr)
 	{
 		std::cout << *treesTMP << std::endl;
