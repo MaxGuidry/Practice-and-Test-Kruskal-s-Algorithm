@@ -15,17 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Practice and Test Kruskal%27s Algorithm\Practice and Test Kruskal%27s Algorithm\Test.cpp">
+    <ClCompile Include="..\Practice and Test Kruskal%27s Algorithm\src\Edge.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Practice and Test Kruskal%27s Algorithm\Practice and Test Kruskal%27s Algorithm\Edge.cpp">
+    <ClCompile Include="..\Practice and Test Kruskal%27s Algorithm\src\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Vector.h">
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Practice and Test Kruskal%27s Algorithm\inc\Edge.h">
       <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Practice and Test Kruskal%27s Algorithm\Practice and Test Kruskal%27s Algorithm\Vector2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    </ClInclude>
   </ItemGroup>
 </Project>

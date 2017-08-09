@@ -18,6 +18,13 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Practice and Test Kruskal%27s Algorithm\src\Edge.cpp" />
+    <ClCompile Include="..\Practice and Test Kruskal%27s Algorithm\src\Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Practice and Test Kruskal%27s Algorithm\inc\Edge.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{EFB41F5B-47CF-4B38-9245-EB0574134497}</ProjectGuid>
     <RootNamespace>PracticeandTestKruskalsAlgorithm</RootNamespace>
@@ -68,7 +75,10 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)inc</IncludePath>
+    <SourcePath>$(VC_SourcePath);$(ProjectDir)src</SourcePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -109,12 +119,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Edge.h" />
-    <ClCompile Include="..\..\Practice and Test Kruskal%27s Algorithm\Practice and Test Kruskal%27s Algorithm\Test.cpp" />
-    <ClCompile Include="..\..\Practice and Test Kruskal%27s Algorithm\Practice and Test Kruskal%27s Algorithm\Vector2.cpp" />
-    <ClCompile Include="Vector.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
