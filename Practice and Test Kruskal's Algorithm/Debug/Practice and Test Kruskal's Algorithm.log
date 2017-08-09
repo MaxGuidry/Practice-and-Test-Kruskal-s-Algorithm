@@ -1,0 +1,8 @@
+﻿  Vector.h
+c:\users\mguid\documents\unreal projects\class projects\practice and test kruskal's algorithm\practice and test kruskal's algorithm\vector.h(35): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Vector2.cpp
+c:\users\mguid\documents\unreal projects\class projects\practice and test kruskal's algorithm\practice and test kruskal's algorithm\vector.h(35): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Test.cpp
+  Generating Code...
+  Practice and Test Kruskal's Algorithm.vcxproj -> C:\Users\mguid\Documents\Unreal Projects\Class Projects\Practice and Test Kruskal's Algorithm\Debug\Practice and Test Kruskal's Algorithm.exe
+  Practice and Test Kruskal's Algorithm.vcxproj -> C:\Users\mguid\Documents\Unreal Projects\Class Projects\Practice and Test Kruskal's Algorithm\Debug\Practice and Test Kruskal's Algorithm.pdb (Partial PDB)
