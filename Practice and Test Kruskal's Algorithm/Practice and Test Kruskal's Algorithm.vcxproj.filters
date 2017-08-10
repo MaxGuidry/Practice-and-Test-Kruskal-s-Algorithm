@@ -21,9 +21,15 @@
     <ClCompile Include="..\Practice and Test Kruskal%27s Algorithm\src\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\Practice and Test Kruskal%27s Algorithm\src\FileRead.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Practice and Test Kruskal%27s Algorithm\inc\Edge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Practice and Test Kruskal%27s Algorithm\inc\FileRead.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

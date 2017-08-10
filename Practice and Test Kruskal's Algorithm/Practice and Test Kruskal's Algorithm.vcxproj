@@ -20,10 +20,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Practice and Test Kruskal%27s Algorithm\src\Edge.cpp" />
+    <ClCompile Include="..\Practice and Test Kruskal%27s Algorithm\src\FileRead.cpp" />
     <ClCompile Include="..\Practice and Test Kruskal%27s Algorithm\src\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Practice and Test Kruskal%27s Algorithm\inc\Edge.h" />
+    <ClInclude Include="..\Practice and Test Kruskal%27s Algorithm\inc\FileRead.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{EFB41F5B-47CF-4B38-9245-EB0574134497}</ProjectGuid>
@@ -84,6 +86,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

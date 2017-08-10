@@ -1,19 +1,20 @@
 #include<iostream>
 #include<Windows.h>
-#include<typeinfo>
 #include"Edge.h"  
+#include"FileRead.h"
 template <class T> bool ArrayContains(const T * ptr, T a);
 Edge * Kruskal(Edge * edges);
 //const ptr can still be moved can not change the dereferenced values
 
+
 int main()
 {
-	int size = 0;
+	/*int size = 0;
 	std::cout << "How many pancake eaters: ";
 	std::cin >> size;
 	int * pancakesEaten = new int[size];
 	int * people = new int[size];
-	int * peopleOrigin = people;	
+	int * peopleOrigin = people;
 	int * origin = pancakesEaten;
 	for (int i = 0; i < size; i++)
 	{
@@ -56,15 +57,13 @@ int main()
 	std::cout << "Person " << *people << " ate the most pancakes, they ate: " << *pancakesEaten << " pancakes.\n";
 	delete[] people;
 	delete[] pancakesEaten;
+*/
 
-	
-
-
-
-
-
-
-
+	FileRead f = FileRead();
+	const char * c =f.Read("test.txt");
+	std::cout <<c << std::endl;
+	//FileRead.Read("test.txt");
+	//FileRead.ReadFile("test.txt");
 	/*Edge one = Edge(1, 2, 5);
 	Edge two = Edge(100, 12, 5);
 	Edge three = Edge(1, 2, 5);
@@ -140,3 +139,4 @@ Edge * Kruskal(Edge * edges)
 	}
 	return edges;
 }
+
