@@ -6,7 +6,31 @@ template <class T> bool ArrayContains(const T * ptr, T a);
 Edge * Kruskal(Edge * edges);
 //const ptr can still be moved can not change the dereferenced values
 
+struct Bob
+{
+	int a, b, c;
+	char e;
+};
+void bobfunc();
+void bobfunc()
+{
 
+}
+void testvoidptr(void* inbob)
+{
+	void voo();
+	void(*func)();
+	inbob = &voo;
+	(void)inbob();
+	
+	(void)inbob();
+}
+
+
+void recast(void* func)
+{
+
+}
 int main()
 {
 	/*int size = 0;
@@ -60,10 +84,21 @@ int main()
 */
 
 	FileRead f = FileRead();
-	const char * c =f.Read("test.txt");
-	std::cout <<c << std::endl;
-	//FileRead.Read("test.txt");
-	//FileRead.ReadFile("test.txt");
+	f.Read("test.txt");
+	std::cout <<f.m_data << std::endl;
+	
+	void(*foo)(int);
+	void foo();
+	auto func_ptr = &foo;
+	(*func_ptr)(5);
+
+	
+	Bob notp = { 5,3,2,'1' };	
+	testvoidptr((void*)&notp);
+	testvoidptr(testvoidptr);
+	
+
+
 	/*Edge one = Edge(1, 2, 5);
 	Edge two = Edge(100, 12, 5);
 	Edge three = Edge(1, 2, 5);
@@ -81,7 +116,10 @@ int main()
 	bool hasEdge = ArrayContains(edges, two);
 
 	Kruskal(edges);*/
+	int num = 5;
+	printf("num is %i", num);
 
+	printf("num is %i", (void*)num);
 	system("pause");
 	return 0;
 }

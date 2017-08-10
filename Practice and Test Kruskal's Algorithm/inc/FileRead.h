@@ -4,6 +4,6 @@ class FileRead
 {
 public:
 	FileRead();
-	const char * Read(char * fileName);
+	void Read(char * fileName);
 	const char * m_data;
 };
