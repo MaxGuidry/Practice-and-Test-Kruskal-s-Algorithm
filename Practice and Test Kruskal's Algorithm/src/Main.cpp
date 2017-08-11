@@ -15,16 +15,20 @@ void bobfunc();
 void bobfunc()
 {
 
-}
+}/*
 void testvoidptr(void* inbob)
 {
 	void voo();
+	void * voidp;
+	
+	void(*funcp)();
 	void(*func)();
 	inbob = &voo;
 	(void)inbob();
-	
+
 	(void)inbob();
-}
+
+}*/
 
 
 void recast(void* func)
@@ -85,18 +89,18 @@ int main()
 
 	FileRead f = FileRead();
 	f.Read("test.txt");
-	std::cout <<f.m_data << std::endl;
-	
+	std::cout << f.m_data << std::endl;
+
 	void(*foo)(int);
 	void foo();
 	auto func_ptr = &foo;
 	(*func_ptr)(5);
 
-	
-	Bob notp = { 5,3,2,'1' };	
+
+	Bob notp = { 5,3,2,'1' };
 	testvoidptr((void*)&notp);
 	testvoidptr(testvoidptr);
-	
+
 
 
 	/*Edge one = Edge(1, 2, 5);
