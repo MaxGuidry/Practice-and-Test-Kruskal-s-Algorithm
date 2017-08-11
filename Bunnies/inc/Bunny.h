@@ -15,7 +15,7 @@ public:
 	unsigned int age;
 	bool gender;
 	Color color;
-	char * name;
+	const char * name;
 	bool RVB;
 private:
 	bool SetColor(Bunny::Color color);

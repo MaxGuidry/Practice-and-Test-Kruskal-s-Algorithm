@@ -1,10 +1,15 @@
 #pragma once
-#include<GLFW\glfw3.h>
+#include <imgui/imgui.h>
+struct GLFWwindow;
+
+
+
+
 class Application
 {
 public:
 	Application();
-	~Application();
+	virtual ~Application();
 	virtual bool Startup() = 0;
 	virtual bool Update(float deltaTime) = 0;
 	virtual bool Draw() = 0;

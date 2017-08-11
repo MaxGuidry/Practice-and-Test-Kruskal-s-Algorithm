@@ -93,6 +93,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)inc;$(SolutionDir)dep</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)dep\lib-vc2015;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -126,15 +127,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\dep\imgui\imgui.cpp" />
+    <ClCompile Include="..\dep\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\dep\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\dep\imgui_impl_glfw_gl3.cpp" />
     <ClCompile Include="src\BunnyApp.cpp" />
     <ClCompile Include="src\Application.cpp" />
     <ClCompile Include="src\Bunny.cpp" />
+    <ClCompile Include="src\FileRead.cpp" />
+    <ClCompile Include="src\gl_core_4_4.c" />
     <ClCompile Include="src\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\dep\imgui\imconfig.h" />
+    <ClInclude Include="..\dep\imgui\imgui.h" />
+    <ClInclude Include="..\dep\imgui\imgui_internal.h" />
+    <ClInclude Include="..\dep\imgui\stb_rect_pack.h" />
+    <ClInclude Include="..\dep\imgui\stb_textedit.h" />
+    <ClInclude Include="..\dep\imgui\stb_truetype.h" />
+    <ClInclude Include="..\dep\imgui_impl_glfw_gl3.h" />
     <ClInclude Include="inc\BunnyApp.h" />
     <ClInclude Include="inc\Application.h" />
     <ClInclude Include="inc\Bunny.h" />
+    <ClInclude Include="inc\FileRead.h" />
+    <ClInclude Include="inc\gl_core_4_4.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
